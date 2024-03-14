@@ -2,6 +2,10 @@
 
 ### Table of Contents
 
+<details>
+   <summary>&nbsp;Show table of contents</summary>
+&nbsp;
+
 >1 - Introduction to Deep Learning
 
 >>A. AL vs ML vs DL: Understanding the Paradigms
@@ -97,6 +101,7 @@
 >>>>I. Learning Rate Scheduler
 
 >7 - Next Steps
+</details>
 
 
 ### About
