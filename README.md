@@ -1,7 +1,7 @@
 # Fundamentals of Feed-Forward Neural Networks: A Practical Introduction to Deep Learning
 
 ## Notebook
-[Link to Notebook](https://colab.research.google.com/github/danplotkin/dl_fundamentals/blob/main/FundamentalsofFeedForwardNeuralNetworks.ipynb#scrollTo=8MxrKPhruuee)
+[Link to Notebook](https://colab.research.google.com/github/danplotkin/dl_fundamentals/blob/main/FundamentalsofFeedForwardNeuralNetworks.ipynb)
 
 ## Table of Contents
 
