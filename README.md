@@ -117,7 +117,7 @@ This notebook requires you understand:
 
 1) How to write basic Python.
 2) Basic Machine Learning (ML) Concepts:
-  - Train vs Validation vs Test set
-  - What is supervised learning?
-  - What is the use-cases for ML?
+     - Train vs Validation vs Test set
+     - What is supervised learning?
+     - What is the use-cases for ML?
 3) Understanding basic Calculus and/or Linear Algebra is a plus.
