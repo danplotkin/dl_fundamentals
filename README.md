@@ -3,7 +3,7 @@
 ### Table of Contents
 
 <details>
-   <summary>&nbsp;Show table of contents</summary>
+   <summary>&nbsp;Show contents</summary>
 &nbsp;
 
 >1 - Introduction to Deep Learning
