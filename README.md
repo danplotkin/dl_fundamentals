@@ -1,101 +1,115 @@
 # Fundamentals of Feed-Forward Neural Networks: A Practical Introduction to Deep Learning
 
->[1 - Introduction to Deep Learning](#scrollTo=nfUG0z1QuwI9)
+### Table of Contents
 
->>[A. AL vs ML vs DL: Understanding the Paradigms](#scrollTo=j9oeQxnqw79A)
+>1 - Introduction to Deep Learning
 
->>[B. Why Deep Learning is Dominating?](#scrollTo=9e32O0zJz-iP)
+>>A. AL vs ML vs DL: Understanding the Paradigms
 
->[2 - Introduction to the Artifical Neural Network](#scrollTo=wwqIKKud4JaF)
+>>B. Why Deep Learning is Dominating?
 
->>[A. Basic Architecture of an FFN](#scrollTo=jTg2vFQ-4j3l)
+>2 - Introduction to the Artifical Neural Network
 
->>[B. Weights and Biases](#scrollTo=GtPT6yho65z9)
+>>A. Basic Architecture of an FFN
 
->>[C. Activation Functions](#scrollTo=elf1MzfdK7T4)
+>>B. Weights and Biases
 
->[4 - Training an FFN](#scrollTo=uJDevWcP5-8j)
+>>C. Activation Functions
 
->>[A. Weight Initialization](#scrollTo=QfUa-8ArWzPK)
+>4 - Training an FFN
 
->>[A. Forward Propagation](#scrollTo=DOl-zCT1FoJk)
+>>A. Weight Initialization
 
->>>[I. Forward Pass Algorithm](#scrollTo=DrkTy_umZUIj)
+>>A. Forward Propagation
 
->>>[II. Loss Calculation](#scrollTo=cEa9sk5eZakp)
+>>>I. Forward Pass Algorithm
 
->>[B. Backpropagation](#scrollTo=gd4XCyIHadqM)
+>>>II. Loss Calculation
 
->>>[I. Compute Gradients](#scrollTo=OSR3Bphyzy1g)
+>>B. Backpropagation
 
->>>[II. Gradient Descent](#scrollTo=VP6pO2EUOt75)
+>>>I. Compute Gradients
 
->>[C. Mini-Batch Processing](#scrollTo=3gz-6tVHc3sn)
+>>>II. Gradient Descent
 
->>[D. Epochs](#scrollTo=GEWA-19JoXDj)
+>>C. Mini-Batch Processing
 
->>[E. Minotoring Optimality](#scrollTo=Y46DZN8sIs6v)
+>>D. Epochs
 
->>[F. Full Training Loop](#scrollTo=oOfB1uUYod_-)
+>>E. Minotoring Optimality
 
->[5 - Common Activation Functions](#scrollTo=f5ol9Gij4H08)
+>>F. Full Training Loop
 
->>[A. Rectified Linear Unit (ReLU)](#scrollTo=qllGyzsE42hv)
+>5 - Common Activation Functions
 
->>>[I. Visualizing ReLU](#scrollTo=qVe_4RmY_n4P)
+>>A. Rectified Linear Unit (ReLU)
 
->>>[II. Dying ReLU Problem](#scrollTo=kCVP13o1_Z7p)
+>>>I. Visualizing ReLU
 
->>[B. Leaky ReLU](#scrollTo=MmEXxdo99tul)
+>>>II. Dying ReLU Problem
 
->>>[I. Visualizing Leaky ReLU](#scrollTo=IgX_KKrxBbyb)
+>>B. Leaky ReLU
 
->>[C. Sigmoid](#scrollTo=68XDVc6Z7bTT)
+>>>I. Visualizing Leaky ReLU
 
->>[D. Hyperbolic Tangent (Tanh)](#scrollTo=3y5jdUuD9pkX)
+>>C. Sigmoid
 
->>>[I. Visualizing Tanh](#scrollTo=rwjzk8oIEMyT)
+>>D. Hyperbolic Tangent (Tanh)
 
->>[E. Softmax](#scrollTo=Hm9MAGPKFDoR)
+>>>I. Visualizing Tanh
 
->>>[I. Visualizing Softmax](#scrollTo=zEPOBWeUGCau)
+>>E. Softmax
 
->[6 - Challenges in Neural Network Training](#scrollTo=qs65aBzKHKAO)
+>>>I. Visualizing Softmax
 
->>[A. Overfitting vs Underfitting](#scrollTo=T6dldQlsHxTq)
+>6 - Challenges in Neural Network Training
 
->>>[I. Overfitting](#scrollTo=0E3nj_o45rWO)
+>>A. Overfitting vs Underfitting
 
->>>>[a. L1/L2 Regularization](#scrollTo=f4-PzPGk6KVS)
+>>>I. Overfitting
 
->>>>[b. Dropout Layer](#scrollTo=DY6V56B2DUbO)
+>>>>a. L1/L2 Regularization
 
->>>>[c. Early Stopping](#scrollTo=1dXRwmvmG0HF)
+>>>>b. Dropout Layer
 
->>>>[d. Use More Data](#scrollTo=El9SvTwtLMNK)
+>>>>c. Early Stopping
 
->>>[II. Underfitting](#scrollTo=2EiESIZVMAd-)
+>>>>d. Use More Data
 
->>>>[a. Add Network Complexity](#scrollTo=fyFd857CMVjI)
+>>>II. Underfitting
 
->>[B. Vanishing and Exploding Gradients](#scrollTo=aGKmoQRMH1FR)
+>>>>a. Add Network Complexity
 
->>>[I. Gradient Clipping](#scrollTo=xLVZZtowL8vT)
+>>B. Vanishing and Exploding Gradients
 
->>>[II. Batch Normalization](#scrollTo=_MTvggvdOBxe)
+>>>I. Gradient Clipping
 
->>>[III. Weight Initialization](#scrollTo=HAKArH9DRjgO)
+>>>II. Batch Normalization
 
->>>[IV. Use ReLU and Leaky ReLU](#scrollTo=yDDcCoBJZOPm)
+>>>III. Weight Initialization
 
->>[C. Computational Resources](#scrollTo=RQTTI8GOH-yI)
+>>>IV. Use ReLU and Leaky ReLU
 
->>[D. Learning Rate Selection](#scrollTo=zyngRUs7IUJ3)
+>>C. Computational Resources
 
->>>>[I. Learning Rate Scheduler](#scrollTo=RkioXj1rc6Mn)
+>>D. Learning Rate Selection
 
+>>>>I. Learning Rate Scheduler
+
+>7 - Next Steps
 
 
 ### About
 
 In this notebook, we will talk about the difference between Deep Learning and Machine Learning, we will talk about the architecture of a Feed-Forward Network (FFN), the algorithms to train one, and some of the challenges in Deep Learning training.
+
+### Prerequisits
+
+This notebook requires you understand:
+
+1) How to write basic Python.
+2) Basic Machine Learning (ML) Concepts:
+  - Train vs Validation vs Test set
+  - What is supervised learning?
+  - What is the use-cases for ML?
+3) Understanding basic Calculus and/or Linear Algebra is a plus.
