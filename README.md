@@ -1,6 +1,9 @@
 # Fundamentals of Feed-Forward Neural Networks: A Practical Introduction to Deep Learning
 
-### Table of Contents
+## Notebook
+[Link to Notebook](https://colab.research.google.com/github/danplotkin/dl_fundamentals/blob/main/FundamentalsofFeedForwardNeuralNetworks.ipynb#scrollTo=8MxrKPhruuee)
+
+## Table of Contents
 
 <details>
    <summary>&nbsp;Show contents</summary>
@@ -104,11 +107,11 @@
 </details>
 
 
-### About
+## About
 
 In this notebook, we will talk about the difference between Deep Learning and Machine Learning, we will talk about the architecture of a Feed-Forward Network (FFN), the algorithms to train one, and some of the challenges in Deep Learning training.
 
-### Prerequisits
+## Prerequisits
 
 This notebook requires you understand:
 
